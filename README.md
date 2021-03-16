@@ -2,6 +2,6 @@
 
 Ordnerstruktur
 
-- Grundlagen
+- Grundlagen (wenn vorhanden)
 - Skripte (wenn vorhanden)
 - Übungen (wenn vorhanden)
