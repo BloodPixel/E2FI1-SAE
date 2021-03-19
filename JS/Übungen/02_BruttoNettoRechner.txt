@@ -1,0 +1,2 @@
+In einem Formular soll mit einer oder mehreren JavaScript-Funktionen aus Nettobetrag und Prozentsatz der Bruttobetrag ermittelt und nach Drücken des Buttons (type = button) ausgegeben werden. 
+Erstellen Sie hierzu eine Datei. Sie müssen keine Validierung der Daten durchführen und nicht runden.

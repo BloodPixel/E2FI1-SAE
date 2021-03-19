@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feld validieren</title>
+    <style>
+      p {
+        color: red;
+      }
+
+      .red-border {
+        border: 1px solid red;
+      }
+    </style>
+    <script>
+      function valid() {
+        let wert_input = document.getElementById("wert");
+
+        if (wert_input.value < 0 || wert_input.value > 100) {
+          wert_input.className = "red-border";
+          document.getElementById("out").innerHTML =
+            "Wert muss zwischen 0 und 100 liegen";
+          wert_input.value = wert_input.value > 100 ? 100 : 0;
+        } else {
+          wert_input.className = "";
+          document.getElementById("out").innerHTML = "";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <input onchange="valid()" type="number" name="wert" id="wert" />
+      <p id="out"></p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+Übung "Progressbar - required - submit disabled"
+Erweitern Sie das Beispiel "progressbar" derart, dass die Anzahl der buttons bzw. der input-Elemte type = submit gezählt werden und von der Gesamtanzahl der Felder abgezogen werde. Desweiteren sollen nur Pflicht-Felder (required) den Anteil an ausgefüllten Feldern (filled) erhöhen. Als Letztes soll der Submit-Button erst dann aktiv sein, wenn alle Pflichfelder ausgefüllt sind.

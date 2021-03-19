@@ -1,0 +1,4 @@
+Ein HTML-Formular mit lediglich einem Feld „wert“ soll mittels JavaScript oder jQuery validiert werden,
+sobald der User das Feld verändert hat. Die Eingabe soll daraufhin geprüft werden, ob sie zwischen 0 und 100 liegt (einschließlich).
+Im Fehlerfall soll der Rahmen um das Eingabefeld rot eingefärbt werden und eine Fehlermeldung „Wert muss zwischen 0 und 100 liegen“ in rot unter dem Feld erscheinen.
+Erstellen Sie hierzu eine Datei.
