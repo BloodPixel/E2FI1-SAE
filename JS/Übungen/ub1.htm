@@ -13,7 +13,7 @@
         // Submit-Button wird mitgezählt, daher hier -1
         let filled = 0;
         let checkList = [];
-        let form_ele = form_ele;
+        let form_ele = document.forms[0].elements;
         let count_ele = form_ele.length;
 
         // submit buttons von anzahl von elementen in form abziehen
@@ -22,6 +22,8 @@
             count_ele--;
           }
         }
+
+        for (let i = 0; i < count_ele; i++) checkList.push(false);
 
         // alle elemente in form
         for (let i = 0; i < count_ele; i++) {
@@ -33,10 +35,10 @@
             // und wenn input is required
             if (form_ele[i].required) {
               // required input ist gefüllt
-              checkList.push(true);
+              checkList[i] = true;
             } else {
               // required input ist nicht gefüllt
-              checkList.push(false);
+              checkList[i] = false;
             }
           }
         }
@@ -47,6 +49,7 @@
         document.getElementById("progress_rate").innerHTML =
           parseInt((filled / count_ele) * 100) + " %";
 
+        console.log(checkList);
         // schalte submit button frei wenn alle required felder gefüllt sind
         document.getElementById("submit").disabled = !checkList.every(
           (v) => v === true
